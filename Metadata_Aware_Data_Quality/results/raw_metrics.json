@@ -1,0 +1,131 @@
+{
+  "seed": 42,
+  "n_cases_total": 400,
+  "n_structural": 90,
+  "n_contract": 120,
+  "n_semantic": 90,
+  "n_clean": 100,
+  "detectors": {
+    "schema-only": {
+      "tp": 90,
+      "fp": 0,
+      "fn": 210,
+      "tn": 100,
+      "precision": 1.0,
+      "recall": 0.3,
+      "f1": 0.4615384615384615,
+      "accuracy": 0.475,
+      "recall_ci95": [
+        0.2459546925566343,
+        0.3521594684385382
+      ],
+      "f1_ci95": [
+        0.3948051948051948,
+        0.5208845208845209
+      ],
+      "timing": {
+        "p50_ms": 0.027317999993670128,
+        "p95_ms": 0.03924000000665728,
+        "mean_ms": 0.03000166999981957
+      }
+    },
+    "contract-aware": {
+      "tp": 210,
+      "fp": 0,
+      "fn": 90,
+      "tn": 100,
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1": 0.8235294117647058,
+      "accuracy": 0.775,
+      "recall_ci95": [
+        0.6442953020134228,
+        0.7533783783783784
+      ],
+      "f1_ci95": [
+        0.7836734693877551,
+        0.8593448940269749
+      ],
+      "timing": {
+        "p50_ms": 0.027550000012865894,
+        "p95_ms": 0.043641999994292746,
+        "mean_ms": 0.031276605000130075
+      }
+    },
+    "metadata-aware": {
+      "tp": 300,
+      "fp": 0,
+      "fn": 0,
+      "tn": 100,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "recall_ci95": [
+        1.0,
+        1.0
+      ],
+      "f1_ci95": [
+        1.0,
+        1.0
+      ],
+      "timing": {
+        "p50_ms": 0.0256180000093309,
+        "p95_ms": 0.033850999997753206,
+        "mean_ms": 0.02687412999925698
+      }
+    }
+  },
+  "detection_by_violation_type": {
+    "column_added": {
+      "schema-only": 1.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "column_removed": {
+      "schema-only": 1.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "type_changed": {
+      "schema-only": 1.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "requiredness_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "uniqueness_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "range_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "enum_domain_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 1.0,
+      "metadata-aware": 1.0
+    },
+    "unit_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 0.0,
+      "metadata-aware": 1.0
+    },
+    "business_definition_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 0.0,
+      "metadata-aware": 1.0
+    },
+    "lineage_source_changed": {
+      "schema-only": 0.0,
+      "contract-aware": 0.0,
+      "metadata-aware": 1.0
+    }
+  }
+}

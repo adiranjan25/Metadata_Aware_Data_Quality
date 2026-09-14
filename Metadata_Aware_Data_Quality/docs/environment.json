@@ -1,0 +1,6 @@
+{
+  "python_version": "3.x (container default)",
+  "key_packages": {"numpy": "as installed in analysis container"},
+  "os": "Linux (sandboxed container)",
+  "note": "Timing values in Table 3/Figure 4 are local, single-machine, single-process Python measurements. They are environment-sensitive and are reported only to characterize relative rule-dispatch overhead, not as a production benchmark."
+}
